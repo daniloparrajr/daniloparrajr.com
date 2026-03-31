@@ -1,0 +1,417 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#05285B",
+					"name": "Blue 900",
+					"slug": "blue-900"
+				},
+				{
+					"color": "#073984",
+					"name": "Blue 800",
+					"slug": "blue-800"
+				},
+				{
+					"color": "#094BAC",
+					"name": "Blue 700",
+					"slug": "blue-700"
+				},
+				{
+					"color": "#0B5CD5",
+					"name": "Blue 600",
+					"slug": "blue-600"
+				},
+				{
+					"color": "#0D6EFD",
+					"name": "Blue 500",
+					"slug": "blue-500"
+				},
+				{
+					"color": "#3485FD",
+					"name": "Blue 400",
+					"slug": "blue-400"
+				},
+				{
+					"color": "#5A9CFE",
+					"name": "Blue 300",
+					"slug": "blue-300"
+				},
+				{
+					"color": "#81B4FE",
+					"name": "Blue 200",
+					"slug": "blue-200"
+				},
+				{
+					"color": "#A8CBFE",
+					"name": "Blue 100",
+					"slug": "blue-100"
+				},
+				{
+					"color": "#E6F0FF",
+					"name": "Blue 50",
+					"slug": "blue-50"
+				},
+				{
+					"color": "#000000",
+					"name": "Black 900",
+					"slug": "black-900"
+				},
+				{
+					"color": "#111111",
+					"name": "Black 800",
+					"slug": "black-800"
+				},
+				{
+					"color": "#282828",
+					"name": "Black 700",
+					"slug": "black-700"
+				},
+				{
+					"color": "#383838",
+					"name": "Black 600",
+					"slug": "black-600"
+				},
+				{
+					"color": "#4B4B4B",
+					"name": "Black 500",
+					"slug": "black-500"
+				},
+				{
+					"color": "#9D9FA1",
+					"name": "Black 400",
+					"slug": "black-400"
+				},
+				{
+					"color": "#BDBDBD",
+					"name": "Black 300",
+					"slug": "black-300"
+				},
+				{
+					"color": "#DDDDDD",
+					"name": "Black 200",
+					"slug": "black-200"
+				},
+				{
+					"color": "#F2F2F2",
+					"name": "Black 100",
+					"slug": "black-100"
+				},
+				{
+					"color": "#F9F9F9",
+					"name": "Black 50",
+					"slug": "black-50"
+				},
+				{
+					"color": "#252933",
+					"name": "Blue Black 900",
+					"slug": "blue-black-900"
+				},
+				{
+					"color": "#343A48",
+					"name": "Blue Black 800",
+					"slug": "blue-black-800"
+				},
+				{
+					"color": "#40485A",
+					"name": "Blue Black 700",
+					"slug": "blue-black-700"
+				},
+				{
+					"color": "#475467",
+					"name": "Blue Black 600",
+					"slug": "blue-black-600"
+				},
+				{
+					"color": "#5F6980",
+					"name": "Blue Black 500",
+					"slug": "blue-black-500"
+				},
+				{
+					"color": "#8D97AC",
+					"name": "Blue Black 400",
+					"slug": "blue-black-400"
+				},
+				{
+					"color": "#D0D5DD",
+					"name": "Blue Black 300",
+					"slug": "blue-black-300"
+				},
+				{
+					"color": "#EAECF0",
+					"name": "Blue Black 200",
+					"slug": "blue-black-200"
+				},
+				{
+					"color": "#F2F4F7",
+					"name": "Blue Black 100",
+					"slug": "blue-black-100"
+				},
+				{
+					"color": "#F9FAFB",
+					"name": "Blue Black 50",
+					"slug": "blue-black-50"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "56.625rem",
+			"wideSize": "80rem"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Inter Variable\"",
+							"fontStyle": "normal",
+							"fontWeight": "400 700",
+							"src": [
+								"file:./assets/fonts/inter-variable/inter-variable-400-700-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Inter Variable\"",
+					"name": "Inter Variable",
+					"slug": "inter-variable"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": {
+						"max": "6.125rem",
+						"min": "2.625rem"
+					},
+					"name": "Display Large",
+					"size": "6.125rem",
+					"slug": "display-large"
+				},
+				{
+					"fluid": {
+						"max": "5.25rem",
+						"min": "2.625rem"
+					},
+					"name": "Display Medium",
+					"size": "5.25rem",
+					"slug": "display-medium"
+				},
+				{
+					"fluid": {
+						"max": "3.9375rem",
+						"min": "2.125rem"
+					},
+					"name": "Display Small",
+					"size": "3.9375rem",
+					"slug": "display-small"
+				},
+				{
+					"fluid": {
+						"max": "3.375rem",
+						"min": "2.125rem"
+					},
+					"name": "Headline Large",
+					"size": "3.375rem",
+					"slug": "headline-large"
+				},
+				{
+					"fluid": {
+						"max": "2.625rem",
+						"min": "1.75rem"
+					},
+					"name": "Headline Medium",
+					"size": "2.625rem",
+					"slug": "headline-medium"
+				},
+				{
+					"fluid": {
+						"max": "2.125rem",
+						"min": "1.75rem"
+					},
+					"name": "Headline Small",
+					"size": "2.125rem",
+					"slug": "headline-small"
+				},
+				{
+					"fluid": {
+						"max": "1.75rem",
+						"min": "1.25rem"
+					},
+					"name": "Title",
+					"size": "1.75rem",
+					"slug": "title"
+				},
+				{
+					"fluid": false,
+					"name": "Body XXL",
+					"size": "1.625rem",
+					"slug": "body-xxl"
+				},
+				{
+					"fluid": false,
+					"name": "Body XL",
+					"size": "1.375rem",
+					"slug": "body-xl"
+				},
+				{
+					"fluid": false,
+					"name": "Body Large",
+					"size": "1.25rem",
+					"slug": "body-large"
+				},
+				{
+					"fluid": false,
+					"name": "Body Medium",
+					"size": "1.125rem",
+					"slug": "body-medium"
+				},
+				{
+					"fluid": false,
+					"name": "Body Base",
+					"size": "1rem",
+					"slug": "body-base"
+				},
+				{
+					"fluid": false,
+					"name": "Body Small",
+					"size": "0.875rem",
+					"slug": "body-small"
+				},
+				{
+					"fluid": false,
+					"name": "Body XS",
+					"size": "0.75rem",
+					"slug": "body-xs"
+				}
+			],
+			"writingMode": true
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": {
+						"bottomLeft": "6px",
+						"bottomRight": "6px",
+						"topLeft": "6px",
+						"topRight": "6px"
+					}
+				},
+				"color": {
+					"background": "var(--wp--preset--color--black-700)",
+					"text": "var(--wp--preset--color--black-50)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--black-50)"
+						}
+					}
+				}
+			},
+			"core/buttons": {
+				"spacing": {
+					"padding": {
+						"bottom": "0",
+						"top": "0"
+					}
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--body-xxl)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--blue-black-50)",
+			"text": "var(--wp--preset--color--blue-black-500)"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--display-medium)",
+					"lineHeight": "1.4"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--display-small)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--headline-large)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--headline-medium)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--headline-small)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--headline-small)"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--black-800)"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--blue-800)"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--blue-500)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--inter-variable)",
+			"fontSize": "var(--wp--preset--font-size--body-base)"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	]
+}
