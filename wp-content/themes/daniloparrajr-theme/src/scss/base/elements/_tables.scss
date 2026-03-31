@@ -1,0 +1,26 @@
+@use "../../abstracts" as a;
+
+.table-wrap {
+	overflow-x: auto;
+
+	@include a.media("<desktop") {
+		table {
+			word-break: normal;
+		}
+
+		th {
+			white-space: nowrap;
+		}
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	word-break: break-all;
+
+	@include a.media(">phone") {
+		table-layout: auto;
+		word-break: normal;
+	}
+}

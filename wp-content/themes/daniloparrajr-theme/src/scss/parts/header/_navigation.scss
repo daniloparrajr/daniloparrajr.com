@@ -1,0 +1,20 @@
+@use "../../abstracts" as a;
+
+.global-header {
+  .wp-block-navigation {
+    &__responsive-container.is-menu-open.has-modal-open {
+      .wp-block-navigation__responsive-container-content {
+        color: #000 !important;
+        padding-right: var(--wp--style--root--padding-right);
+        padding-left: var(--wp--style--root--padding-left);
+      }
+
+      .wp-block-navigation__responsive-container-close {
+        top: 10px;
+        color: #000;
+        right: calc(var(--wp--style--root--padding-left) - 10px);
+        padding: 5px;
+      }
+    }
+  }
+}

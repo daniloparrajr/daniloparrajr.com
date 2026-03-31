@@ -1,0 +1,23 @@
+@use "../../abstracts" as a;
+
+.global-header--fixed {
+  position: fixed;
+
+  .wp-block-navigation {
+    color: var(--wp--preset--color--white);
+  }
+
+  > .wp-block-group {
+    background-color: transparent !important;
+  }
+
+  .wp-block-site-logo .custom-logo {
+    filter: invert(100%) grayscale(100%) brightness(200%);
+  }
+
+  &.global-header--not-top {
+    .wp-block-site-logo .custom-logo {
+      filter: initial;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "sass:map";
+
+@function im-to-em($breakpoints, $base-value: 16px) {
+	$new-breakpoints: ();
+
+	@each $name, $value in $breakpoints {
+		$em-value: math.div($value, $base-value) * 1em;
+		$new-breakpoints: map.merge(
+			$new-breakpoints,
+			(
+				$name: $em-value,
+			)
+		);
+	}
+
+	@return $new-breakpoints;
+}
+
+@function rem($size, $base-value: 16px) {
+	@return math.div($size, $base-value) * 1rem;
+}
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+	@return #{math.div($pixels, $context)}em;
+}
+
+@function div($num1, $num2) {
+	@return #{math.div($num1, $num2)};
+}

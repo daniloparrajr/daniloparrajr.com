@@ -1,0 +1,64 @@
+@use "../../abstracts" as a;
+
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: a.rem(20px);
+}
+
+hr {
+	border-collapse: collapse;
+	clear: both;
+	border: none;
+	border-bottom: 1px solid var(--wp--preset--color--white-shade-30);
+	margin: var(--wp--preset--spacing--40) auto;
+
+	& + * {
+		margin-top: 0;
+	}
+}
+
+b,
+strong {
+	font-weight: 500;
+}
+
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+mark {
+	background: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--dark);
+}
+
+.wp-block-quote p:last-of-type,
+blockquote p:last-of-type {
+	margin-bottom: 0;
+}
+
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+blockquote,
+caption,
+figcaption,
+p {
+	text-wrap: pretty;
+}
+
+pre {
+  overflow-x: scroll;
+}
+
+:target {
+  scroll-margin-top: var(--wp--preset--spacing--120);
+}

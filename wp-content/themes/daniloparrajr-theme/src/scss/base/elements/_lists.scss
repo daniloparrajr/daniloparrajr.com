@@ -1,0 +1,16 @@
+:where(ul),
+:where(ol) {
+  padding-left: 1.12em;
+
+  li {
+    margin-bottom: 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+:where(ul) {
+  list-style: square;
+}

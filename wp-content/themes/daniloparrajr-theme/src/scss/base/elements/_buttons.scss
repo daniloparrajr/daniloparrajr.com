@@ -1,0 +1,7 @@
+@use "../../abstracts" as a;
+
+.wp-element-button {
+	transition:
+		color 300ms ease-in-out,
+		background-color 300ms ease-in-out;
+}

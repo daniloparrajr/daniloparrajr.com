@@ -1,0 +1,17 @@
+@use "../../abstracts" as a;
+
+.wp-element-button {
+	display: inline-block;
+}
+
+.wp-block-button.is-style-link {
+	.wp-element-button {
+		padding: 0;
+		background-color: transparent;
+		color: var(--wp--custom--color--link);
+		text-decoration: underline;
+		text-decoration-color: inherit;
+		text-underline-offset: var(--wp--custom--link--underline-offset);
+		text-decoration-thickness: var(--wp--custom--link--decoration-thickness);
+	}
+}

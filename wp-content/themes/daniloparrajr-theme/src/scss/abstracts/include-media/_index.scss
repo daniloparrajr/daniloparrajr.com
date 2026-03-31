@@ -1,0 +1,14 @@
+@use "../functions" as fn;
+
+@forward "include-media" with (
+	$breakpoints: (
+		phone: fn.rem(320px),
+		phone-m: fn.rem(375px),
+		phone-l: fn.rem(425px),
+		tablet-sm: fn.rem(575px),
+		tablet: fn.rem(768px),
+		desktop: fn.rem(1024px),
+		desktop-md: fn.rem(1200px),
+		desktop-l: fn.rem(1440px),
+	)
+);

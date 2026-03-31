@@ -1,0 +1,6 @@
+@forward "header";
+@forward "footer";
+
+:where(.wp-site-blocks) > * {
+  margin-top: 0;
+}

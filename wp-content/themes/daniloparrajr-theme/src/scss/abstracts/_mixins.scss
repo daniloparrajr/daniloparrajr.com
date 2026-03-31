@@ -1,0 +1,64 @@
+@use "./functions" as a;
+@use "sass:math";
+
+// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=google-font&typeface=Roboto&custom-typeface-name=Helvetica&custom-typeface-url=&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=36&line-height=1.2&top-crop=7&bottom-crop=3
+@mixin text-crop($line-height: 1.3, $top-adjustment: 0, $bottom-adjustment: 0) {
+	// Configured in Step 1
+	$top-crop: 7;
+	$bottom-crop: 3;
+	$crop-font-size: 36;
+	$crop-line-height: 1.2;
+
+	// Apply values to calculate em-based margins that work with any font size
+	$dynamic-top-crop: math.div(
+		math.max(
+			(
+				$top-crop + ($line-height - $crop-line-height) *
+					(math.div($crop-font-size, 2))
+			),
+			0
+		),
+		$crop-font-size
+	);
+	$dynamic-bottom-crop: math.div(
+		math.max(
+			(
+				$bottom-crop + ($line-height - $crop-line-height) *
+					(math.div($crop-font-size, 2))
+			),
+			0
+		),
+		$crop-font-size
+	);
+
+	// Mixin output
+	line-height: $line-height;
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		height: 0;
+		width: 0;
+	}
+
+	&::before {
+		margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment});
+	}
+
+	&::after {
+		margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
+	}
+}
+
+@mixin button-animated {
+	background-size: 600% 600%;
+	animation: wiggle 20s ease-in-out infinite;
+	transition: background-color;
+
+	&:hover,
+	&:active,
+	&:focus {
+		animation: none;
+	}
+}

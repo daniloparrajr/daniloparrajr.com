@@ -1,0 +1,119 @@
+@use "../../abstracts" as a;
+
+.global-header {
+  .wp-block-image {
+    > a {
+      display: block;
+    }
+  }
+
+  @include a.media('>992px') {
+    .wp-block-navigation__container {
+      > .wp-block-navigation-item {
+        > .wp-block-navigation-item__content {
+          padding: a.rem(20px) 0;
+          display: inline-block;
+        }
+
+        > .wp-block-navigation-submenu {
+          border-color: var(--wp--preset--color--white-shade-20);
+        }
+      }
+    }
+  }
+
+  @media not (prefers-reduced-motion) {
+    .wp-block-navigation .wp-block-navigation__container {
+      > .wp-block-navigation-item.has-child {
+        > .wp-block-navigation-submenu {
+          transition: opacity var(--wp--custom--ui--easing);
+        }
+      }
+    }
+  }
+
+  @media (max-width: a.rem(600px)) {
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: block !important;
+    }
+
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: a.rem(992px)) {
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: none !important;
+    }
+
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: block !important;
+    }
+  }
+
+  // Prevent search form toggle animation from jumping when toggling the search field.
+  .wp-block-navigation .wp-block-search__inside-wrapper {
+    justify-content: flex-end;
+  }
+}
+
+.global-header--sticky,
+.global-header--fixed {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  transition: background-color .5s ease-in-out, border-color .5s ease-in-out;
+  will-change: transform, opacity;
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent;
+
+  .has-modal-open & {
+    will-change: initial;
+    animation: none;
+  }
+
+  .has-pum-topbar-open & {
+    top: var(--pum--topbar--offset);
+  }
+
+  @media screen and (min-width: 600px) {
+    .admin-bar:not(.has-pum-topbar-open) &.global-header--top,
+    .admin-bar:not(.has-pum-topbar-open) &.global-header--pinned {
+      top: 32px;
+    }
+  }
+
+  @media screen and (max-width: 782px) {
+    .admin-bar:not(.has-pum-topbar-open) &.global-header--top,
+    .admin-bar:not(.has-pum-topbar-open) &.global-header-pinned {
+      top: 46px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .admin-bar:not(.has-pum-topbar-open) &.global-header--pinned.global-header--not-top {
+      top: 0;
+    }
+  }
+
+  &.global-header--not-top {
+    background-color: var(--wp--preset--color--white) !important;
+    border-bottom-color: var(--wp--preset--color--white-shade-20);
+
+    .wp-block-navigation {
+      color: var(--wp--preset--color--black) !important;
+    }
+  }
+
+  &.global-header--unpinned {
+    animation-name: slideUp;
+  }
+
+  &.global-header--pinned {
+    animation-name: slideDown;
+  }
+}
