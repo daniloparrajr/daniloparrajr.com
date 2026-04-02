@@ -172,6 +172,109 @@
 				"rem",
 				"vh",
 				"vw"
+			],
+			"customSpacingSize": false,
+			"spacingSizes": [
+				{
+					"name": "2px",
+					"slug": "100",
+					"size": "0.125rem"
+				},
+				{
+					"name": "4px",
+					"slug": "200",
+					"size": "0.25rem"
+				},
+				{
+					"name": "8px",
+					"slug": "300",
+					"size": "0.5rem"
+				},
+				{
+					"name": "10px",
+					"slug": "400",
+					"size": "0.625rem"
+				},
+				{
+					"name": "12px",
+					"slug": "500",
+					"size": "0.75rem"
+				},
+				{
+					"name": "14px",
+					"slug": "600",
+					"size": "0.875rem"
+				},
+				{
+					"name": "16px",
+					"slug": "700",
+					"size": "1rem"
+				},
+				{
+					"name": "20px",
+					"slug": "800",
+					"size": "1.25rem"
+				},
+				{
+					"name": "28px",
+					"slug": "900",
+					"size": "1.75rem"
+				},
+				{
+					"name": "32px",
+					"slug": "1000",
+					"size": "2rem"
+				},
+				{
+					"name": "24-20px",
+					"slug": "fluid-100",
+					"size": "clamp(1.25rem, 0.38vw + 1.16rem, 1.5rem)"
+				},
+				{
+					"name": "32-24px",
+					"slug": "fluid-200",
+					"size": "clamp(1.5rem, 0.75vw + 1.32rem, 2rem)"
+				},
+				{
+					"name": "40-24px",
+					"slug": "fluid-300",
+					"size": "clamp(1.5rem, 1.5vw + 1.15rem, 2.5rem)"
+				},
+				{
+					"name": "56-24px",
+					"slug": "fluid-400",
+					"size": "clamp(1.5rem, 3vw + 0.8rem, 3.5rem)"
+				},
+				{
+					"name": "56-32px",
+					"slug": "fluid-500",
+					"size": "clamp(2rem, 2.25vw + 1.47rem, 3.5rem)"
+				},
+				{
+					"name": "64-32px",
+					"slug": "fluid-600",
+					"size": "clamp(2rem, 3vw + 1.3rem, 4rem)"
+				},
+				{
+					"name": "72-40px",
+					"slug": "fluid-700",
+					"size": "clamp(2.5rem, 3vw + 1.8rem, 4.5rem)"
+				},
+				{
+					"name": "80-40px",
+					"slug": "fluid-800",
+					"size": "clamp(2.5rem, 3.76vw + 1.62rem, 5rem)"
+				},
+				{
+					"name": "80-64px",
+					"slug": "fluid-900",
+					"size": "clamp(4rem, 1.5vw + 3.65rem, 5rem)"
+				},
+				{
+					"name": "120-72px",
+					"slug": "fluid-1000",
+					"size": "clamp(4.5rem, 4.51vw + 3.44rem, 7.5rem)"
+				}
 			]
 		},
 		"typography": {
