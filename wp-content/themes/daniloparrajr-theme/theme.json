@@ -165,6 +165,8 @@
 			"wideSize": "80rem"
 		},
 		"spacing": {
+			"defaultSpacingSizes": false,
+			"customSpacingSize": false,
 			"units": [
 				"%",
 				"px",
@@ -173,7 +175,6 @@
 				"vh",
 				"vw"
 			],
-			"customSpacingSize": false,
 			"spacingSizes": [
 				{
 					"name": "2px",
