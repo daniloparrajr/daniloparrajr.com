@@ -412,6 +412,26 @@
 			],
 			"writingMode": true
 		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"name": "Heavy",
+					"slug": "heavy",
+					"shadow": "0 1 10px rgba(0, 0, 0, 0.6)"
+				},
+				{
+					"name": "Elevated",
+					"slug": "elevated",
+					"shadow": "0 16 40px rgba(0, 0, 0, 0.3)"
+				},
+				{
+					"name": "Soft",
+					"slug": "soft",
+					"shadow": "0 8px 60px rgba(0, 0, 0, 0.1)"
+				}
+			]
+		},
 		"custom": {
 			"link": {
 				"decorationThickness": "1px",
