@@ -177,39 +177,39 @@
 			],
 			"spacingSizes": [
 				{
-					"name": "2px",
-					"slug": "100",
-					"size": "0.125rem"
-				},
-				{
 					"name": "4px",
-					"slug": "200",
+					"slug": "100",
 					"size": "0.25rem"
 				},
 				{
 					"name": "8px",
-					"slug": "300",
+					"slug": "200",
 					"size": "0.5rem"
 				},
 				{
 					"name": "10px",
-					"slug": "400",
+					"slug": "300",
 					"size": "0.625rem"
 				},
 				{
 					"name": "12px",
-					"slug": "500",
+					"slug": "400",
 					"size": "0.75rem"
 				},
 				{
 					"name": "14px",
-					"slug": "600",
+					"slug": "500",
 					"size": "0.875rem"
 				},
 				{
 					"name": "16px",
-					"slug": "700",
+					"slug": "600",
 					"size": "1rem"
+				},
+				{
+					"name": "18px",
+					"slug": "700",
+					"size": "1.125rem"
 				},
 				{
 					"name": "20px",
