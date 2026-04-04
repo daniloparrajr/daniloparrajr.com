@@ -562,6 +562,10 @@
 			"heading": {
 				"color": {
 					"text": "var(--wp--preset--color--black-800)"
+				},
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "600"
 				}
 			},
 			"link": {
