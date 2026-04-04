@@ -575,6 +575,12 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--inter-variable)",
 			"fontSize": "var(--wp--preset--font-size--body-base)"
+		},
+		"spacing": {
+			"padding": {
+				"left": "var(--wp--preset--spacing--fluid-100)",
+				"right": "var(--wp--preset--spacing--fluid-100)"
+			}
 		}
 	},
 	"templateParts": [
