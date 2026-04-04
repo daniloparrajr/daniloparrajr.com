@@ -489,6 +489,9 @@
 				}
 			},
 			"core/navigation": {
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--fluid-300)"
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body-small)",
 					"fontStyle": "normal",
