@@ -169,6 +169,12 @@ function register_block_styles() {
 				'label' => __( 'Link', 'experi-theme' ),
 			)
 		),
+		'core/categories'          => array(
+			array(
+				'name'  => 'badges',
+				'label' => __( 'Badges', 'experi-theme' ),
+			)
+		),
 	);
 
 	foreach ( $block_styles as $block => $block_style_arr ) {

@@ -1,0 +1,1 @@
+:root :where(.wp-block-categories.is-style-badges){display:flex;flex-wrap:wrap;gap:.5rem;padding-left:0}:root :where(.wp-block-categories.is-style-badges)>.cat-item{list-style:none;margin:0}:root :where(.wp-block-categories.is-style-badges)>.cat-item a{border:1px solid;border-radius:99px;display:inline-block;padding:.125rem 1.25rem;text-decoration:none}

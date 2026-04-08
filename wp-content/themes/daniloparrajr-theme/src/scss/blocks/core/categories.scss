@@ -1,0 +1,21 @@
+@use "../../abstracts" as a;
+
+:root :where(.wp-block-categories.is-style-badges) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: a.rem(8px);
+  padding-left: 0;
+
+    > .cat-item {
+      margin: 0;
+      list-style: none;
+
+        a {
+          text-decoration: none;
+          padding: a.rem(2px) a.rem(20px);
+          border-radius: 99px;
+          border: 1px solid;
+          display: inline-block;
+        }
+    }
+}
