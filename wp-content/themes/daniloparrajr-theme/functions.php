@@ -206,3 +206,5 @@ function theme_setup() {
 	add_filter( 'should_load_remote_block_patterns', '__return_false' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\theme_setup' );
+
+add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );
