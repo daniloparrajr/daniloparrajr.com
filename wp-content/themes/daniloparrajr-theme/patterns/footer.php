@@ -13,7 +13,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|blue-black-100"}}}},"textColor":"blue-black-100","fontSize":"display-medium"} -->
-<h2 class="wp-block-heading has-text-align-center has-blue-black-100-color has-text-color has-link-color has-display-medium-font-size"><?php esc_html_e('Let\'s create your next big idea.', 'daniloparrajr-theme');?></h2>
+<h2 class="wp-block-heading has-text-align-center has-blue-black-100-color has-text-color has-link-color has-display-medium-font-size"><?php esc_html_e('Let’s create your next big idea.', 'daniloparrajr-theme');?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
