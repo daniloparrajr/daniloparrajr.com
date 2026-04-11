@@ -504,6 +504,11 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body-xxl)"
 				}
+			},
+			"core/navigation-link": {
+				"color": {
+					"text": "var(--wp--preset--color--black-700)"
+				}
 			}
 		},
 		"color": {
