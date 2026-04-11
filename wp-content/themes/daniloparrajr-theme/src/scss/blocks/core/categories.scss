@@ -1,5 +1,11 @@
 @use "../../abstracts" as a;
 
+.wp-block-categories {
+  .current-cat {
+    color: var(--wp--preset--color--blue-600);
+  }
+}
+
 :root :where(.wp-block-categories.is-style-badges) {
   display: flex;
   flex-wrap: wrap;
