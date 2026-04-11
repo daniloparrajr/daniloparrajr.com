@@ -19,3 +19,38 @@
         }
     }
 }
+
+:root :where(.wp-block-categories.is-style-columns) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0;
+  color: var(--wp--preset--color--black-700);
+  position: relative;
+  border: 1px solid var(--wp--preset--color--black-700);
+  border-left: none;
+  border-right: none;
+
+  > .cat-item {
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid var(--wp--preset--color--black-700);
+
+    &:last-child,
+    &:nth-last-child(2):nth-child(odd) {
+      border-bottom: none;
+    }
+
+    a {
+      text-decoration: none;
+      padding: a.rem(10px) 0;
+      display: inline-block;
+      color: inherit;
+
+      &:hover,
+      &:active,
+      &:focus-within {
+        color: var(--wp--preset--color--blue-600);
+      }
+    }
+  }
+}

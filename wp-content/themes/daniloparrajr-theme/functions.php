@@ -173,6 +173,10 @@ function register_block_styles() {
 			array(
 				'name'  => 'badges',
 				'label' => __( 'Badges', 'experi-theme' ),
+			),
+			array(
+				'name'  => 'columns',
+				'label' => __( 'Columns', 'experi-theme' ),
 			)
 		),
 	);
