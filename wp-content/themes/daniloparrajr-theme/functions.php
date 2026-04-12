@@ -16,6 +16,8 @@ const STYLES_DIR  = BUILD_DIR . '/css';
 const SCRIPTS_DIR = BUILD_DIR . '/js';
 const VENDOR_DIR  = '/assets/vendor';
 
+require_once get_theme_file_path( '/includes/blocks/post-date.php' );
+
 /**
  * Enqueues block-specific stylesheets found within a specified theme directory.
  *

@@ -1,0 +1,11 @@
+@use "../../abstracts" as a;
+
+.wp-block-post-date {
+  display: flex;
+  align-items: center;
+  gap: a.rem(5px);
+
+  .dp-icon {
+    font-size: 1.2em;
+  }
+}

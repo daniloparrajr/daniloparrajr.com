@@ -1,22 +1,5 @@
 @use "../../abstracts" as a;
 
-input[type="submit"] {
-  border-radius: var(--wp--custom--rounded);
-  font-size: var(--wp--preset--font-size--medium);
-  line-height: 1.5;
-  padding: 0.6em 0.75em;
-  background-color: var(--wp--preset--color--black);
-  border-width: 0;
-  color: var(--wp--preset--color--white);
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  letter-spacing: inherit;
-  text-decoration: none;
-  text-transform: inherit;
-  cursor: pointer;
-}
-
 input[type="text"],
 input[type="number"],
 input[type="password"] {
@@ -26,4 +9,8 @@ input[type="password"] {
   block-size: 2.6875rem;
   min-block-size: var(--gf-local-min-height);
   padding: 0 a.rem(12px);
+}
+
+textarea {
+  border-radius: 9px;
 }
