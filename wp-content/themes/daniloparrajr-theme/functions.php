@@ -131,6 +131,15 @@ function theme_assets() {
 		array(),
 		$theme_version
 	);
+
+	if ( is_home() ) {
+		wp_enqueue_style(
+			$theme_handle . '-blog',
+			get_theme_file_uri( STYLES_DIR . '/blog.css' ),
+			array(),
+			$theme_version
+		);
+	}
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\theme_assets' );
 

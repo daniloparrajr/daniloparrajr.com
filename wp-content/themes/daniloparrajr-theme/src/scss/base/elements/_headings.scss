@@ -9,6 +9,30 @@ h6 {
 	text-wrap: pretty;
 }
 
-:where(.has-display-medium-font-size) {
+:where(.has-display-font-size) {
 	line-height: 1.05;
+}
+
+:where(.has-headline-1-font-size) {
+	line-height: 1.17;
+}
+
+:where(.has-headline-2-font-size) {
+	line-height: 1.1;
+}
+
+:where(.has-headline-3-font-size) {
+	line-height: 1.18;
+}
+
+:where(.has-headline-4-font-size) {
+	line-height: 1.1;
+}
+
+:where(.has-headline-5-font-size) {
+	line-height: 1.18;
+}
+
+:where(.has-headline-6-font-size) {
+	line-height: 1.215;
 }
