@@ -132,10 +132,10 @@ function theme_assets() {
 		$theme_version
 	);
 
-	if ( is_home() ) {
+	if ( is_archive() || is_home() ) {
 		wp_enqueue_style(
-			$theme_handle . '-blog',
-			get_theme_file_uri( STYLES_DIR . '/blog.css' ),
+			$theme_handle . '-archive',
+			get_theme_file_uri( STYLES_DIR . '/archive.css' ),
 			array(),
 			$theme_version
 		);

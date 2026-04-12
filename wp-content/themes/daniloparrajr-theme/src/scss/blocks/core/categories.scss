@@ -1,11 +1,5 @@
 @use "../../abstracts" as a;
 
-.wp-block-categories {
-  .current-cat {
-    color: var(--wp--preset--color--blue-600);
-  }
-}
-
 :root :where(.wp-block-categories.is-style-badges) {
   display: flex;
   flex-wrap: wrap;
@@ -27,23 +21,32 @@
 }
 
 :root :where(.wp-block-categories.is-style-columns) {
+  --border-color: var(--wp--preset--color--black-100);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 0;
-  color: var(--wp--preset--color--black-700);
   position: relative;
-  border: 1px solid var(--wp--preset--color--black-700);
+  border: 1px solid var(--border-color);
   border-left: none;
   border-right: none;
+  color: var(--wp--preset--color--blue-black-400);
 
   > .cat-item {
     margin: 0;
     list-style: none;
-    border-bottom: 1px solid var(--wp--preset--color--black-700);
+    border-bottom: 1px solid var(--border-color);
 
     &:last-child,
     &:nth-last-child(2):nth-child(odd) {
       border-bottom: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus-within,
+    &.current-cat {
+      color: var(--wp--preset--color--black-800);
+      border-bottom-color: var(--wp--preset--color--black-800);
     }
 
     a {
@@ -51,12 +54,6 @@
       padding: a.rem(10px) 0;
       display: inline-block;
       color: inherit;
-
-      &:hover,
-      &:active,
-      &:focus-within {
-        color: var(--wp--preset--color--blue-600);
-      }
     }
   }
 }
