@@ -263,6 +263,11 @@
 					"slug": "1000"
 				},
 				{
+					"name": "8-16px",
+					"size": "clamp(0.5rem, 0.3239rem + 0.7512vw, 1rem)",
+					"slug": "fluid-50"
+				},
+				{
 					"name": "24-20px",
 					"size": "clamp(1.25rem, 0.38vw + 1.16rem, 1.5rem)",
 					"slug": "fluid-100"
