@@ -174,13 +174,19 @@ add_action( 'init', __NAMESPACE__ . '\\enqueue_core_block_stylesheets' );
  */
 function register_block_styles() {
 	$block_styles = array(
-		'core/button'          => array(
+		'core/button'     => array(
 			array(
 				'name'  => 'link',
 				'label' => __( 'Link', 'experi-theme' ),
 			)
 		),
-		'core/categories'          => array(
+		'core/heading'    => array(
+			array(
+				'name'  => 'asterisk',
+				'label' => __( 'Asterisk', 'experi-theme' ),
+			),
+		),
+		'core/categories' => array(
 			array(
 				'name'  => 'badges',
 				'label' => __( 'Badges', 'experi-theme' ),

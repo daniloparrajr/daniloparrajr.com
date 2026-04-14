@@ -1,0 +1,16 @@
+.wp-block-heading.is-style-asterisk {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3em;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("../../../../assets/icons/code-asterisk.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
