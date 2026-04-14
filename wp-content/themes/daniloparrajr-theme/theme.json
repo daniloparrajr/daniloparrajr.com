@@ -59,7 +59,7 @@
 					"slug": "blue-50"
 				},
 				{
-					"color": "#000000",
+					"color": "#121212",
 					"name": "Black 900",
 					"slug": "black-900"
 				},
@@ -728,11 +728,20 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "header"
+			"name": "header",
+			"label": "Header"
 		},
 		{
 			"area": "footer",
-			"name": "footer"
+			"name": "footer",
+			"label": "Footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "custom-wide-no-title",
+			"postTypes": ["page"],
+			"title": "Page - Wide (No Title)"
 		}
 	]
 }

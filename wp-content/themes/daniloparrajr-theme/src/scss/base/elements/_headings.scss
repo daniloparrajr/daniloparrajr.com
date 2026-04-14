@@ -9,12 +9,14 @@ h6 {
 	text-wrap: pretty;
 }
 
-:where(.has-display-font-size) {
+.has-display-font-size {
 	line-height: 1.05;
+	letter-spacing: -0.05em;
 }
 
 .has-headline-1-font-size {
-	line-height: 1.17;
+	line-height: 1.1em;
+	letter-spacing: -0.04em;
 }
 
 .has-headline-2-font-size {
@@ -35,4 +37,5 @@ h6 {
 
 .has-headline-6-font-size {
 	line-height: 1.215;
+	letter-spacing: -0.6px;
 }
