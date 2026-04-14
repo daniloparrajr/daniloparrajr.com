@@ -1,4 +1,6 @@
 .wp-block-accordion {
+  interpolate-size: allow-keywords;
+
   .wp-block-accordion-heading {
     margin: 0;
   }
@@ -39,6 +41,25 @@
       width: 100%;
       height: 2px;
       left: 50%;
+    }
+  }
+
+  .wp-block-accordion-panel {
+    transition-property: display opacity height;
+    transition-duration: 0.3s;
+    transition-behavior: allow-discrete;
+    overflow: hidden;
+    opacity: 1;
+    height: auto;
+
+    @starting-style {
+      opacity: 0;
+      height: 0;
+    }
+
+    &[inert] {
+      opacity: 0;
+      height: 0;
     }
   }
 
