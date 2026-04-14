@@ -1,6 +1,15 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
 	"version": 3,
+	"customTemplates": [
+		{
+			"name": "custom-wide-no-title",
+			"postTypes": [
+				"page"
+			],
+			"title": "Page - Wide (No Title)"
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -728,20 +737,13 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "header",
-			"label": "Header"
+			"label": "Header",
+			"name": "header"
 		},
 		{
 			"area": "footer",
-			"name": "footer",
-			"label": "Footer"
-		}
-	],
-	"customTemplates": [
-		{
-			"name": "custom-wide-no-title",
-			"postTypes": ["page"],
-			"title": "Page - Wide (No Title)"
+			"label": "Footer",
+			"name": "footer"
 		}
 	]
 }
