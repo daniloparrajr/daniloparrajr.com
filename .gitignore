@@ -134,6 +134,9 @@ wp-content/plugins/*
 wp-content/themes/*
 
 # Only track the following themes.
+!wp-content/plugins/payak-blocks
+
+# Only track the following themes.
 !wp-content/themes/daniloparrajr-theme
 
 # always ignore node_modules folders
