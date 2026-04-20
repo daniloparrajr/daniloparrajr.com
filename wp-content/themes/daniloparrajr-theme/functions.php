@@ -225,3 +225,89 @@ function theme_setup() {
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\theme_setup' );
 
 add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );
+function post_kses( $allowed_tags, $context ) {
+
+	if ( 'post' === $context ) {
+
+		$allowed_tags['svg'] = array(
+			'xmlns'       => true,
+			'viewbox'     => true,
+			'width'       => true,
+			'height'      => true,
+			'fill'        => true,
+			'aria-hidden' => true,
+			'role'        => true,
+			'focusable'   => true,
+			'class'       => true,
+		);
+
+		$allowed_tags['path'] = array(
+			'd'    => true,
+			'fill' => true,
+			'stroke' => true,
+		);
+
+		$allowed_tags['g'] = array(
+			'fill' => true,
+		);
+
+		$allowed_tags['input'] = [
+			'type'    => true,
+			'name'    => true,
+			'id'      => true,
+			'class'   => true,
+			'value'   => true,
+			'placeholder' => true,
+			'checked' => true,
+			'disabled' => true,
+			'required' => true,
+		];
+
+		$allowed_tags['form'] = [
+			'action'  => true,
+			'method'  => true,
+			'id'      => true,
+			'class'   => true,
+			'enctype' => true,
+		];
+
+		$allowed_tags['textarea'] = [
+			'name'    => true,
+			'id'      => true,
+			'class'   => true,
+			'placeholder' => true,
+			'required' => true,
+		];
+	}
+	return $allowed_tags;
+}
+add_filter( 'wp_kses_allowed_html', __NAMESPACE__ . '\\post_kses', 10, 2 );
+
+function disallowed_core_blocks( $allowed_block_types, $editor_context ) {
+	// If $allowed_blocks is true, all blocks are currently allowed.
+	// We need to get the full list to remove just one.
+	if ( true === $allowed_blocks || empty( $allowed_blocks ) ) {
+		$allowed_blocks = array_keys( \WP_Block_Type_Registry::get_instance()->get_all_registered() );
+	}
+
+	// Core blocks to remove
+	$disallowed_blocks = array(
+		'core/accordion'
+	);
+
+	foreach ( $disallowed_blocks as $block ) {
+		// Find and remove the $disallowed_block block
+		$key = array_search( $block, $allowed_blocks, true );
+
+		if ( false === $key ) {
+			continue;
+		}
+
+		unset( $allowed_blocks[ $key ] );
+	}
+
+	// Re-index the array and return
+	return array_values( $allowed_blocks );
+}
+
+add_filter( 'allowed_block_types_all', __NAMESPACE__ . '\\disallowed_core_blocks', 10, 2 );
