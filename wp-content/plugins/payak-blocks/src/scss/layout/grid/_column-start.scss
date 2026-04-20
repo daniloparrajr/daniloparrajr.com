@@ -1,0 +1,31 @@
+@media screen and (min-width: 36rem) {
+	@for $i from 1 through 14 {
+		.eb-col-start-sm-#{$i} {
+			grid-column-start: $i;
+		}
+	}
+}
+
+@media screen and (min-width: 48.813rem) {
+	@for $i from 1 through 14 {
+		.eb-col-start-md-#{$i} {
+			grid-column-start: $i;
+		}
+	}
+}
+
+@media screen and (min-width: 62rem) {
+	@for $i from 1 through 14 {
+		.eb-col-start-lg-#{$i} {
+			grid-column-start: $i;
+		}
+	}
+}
+
+@media screen and (min-width: 75rem) {
+	@for $i from 1 through 14 {
+		.eb-col-start-xl-#{$i} {
+			grid-column-start: $i;
+		}
+	}
+}

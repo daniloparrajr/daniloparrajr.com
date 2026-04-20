@@ -1,0 +1,31 @@
+.eb-map-container {
+	position: relative;
+}
+
+.eb-map {
+	position: absolute !important;
+	inset: 0;
+}
+
+.eb-map-marker {
+	background-image: url('../../assets/images/marker.svg');
+	height: 39.51px;
+	width: 27.95px;
+	cursor: pointer;
+}
+
+.eb-map-popup {
+	font-family: var(--wp--custom--font-family--base);
+
+	&__title {
+		font-size: var(--wp--preset--font-size--small);
+		font-weight: 500;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&__text {
+		margin-top: var(--wp--preset--spacing--10);
+		margin-bottom: 0;
+	}
+}

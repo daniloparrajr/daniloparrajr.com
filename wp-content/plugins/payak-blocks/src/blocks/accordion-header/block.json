@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "payak-blocks/accordion-header",
+	"version": "1.0.1",
+	"title": "Accordion Header",
+	"category": "payak-blocks",
+	"supports": {
+		"interactivity": true,
+		"html": false,
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": false,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"margin": false,
+				"padding": false
+			}
+		}
+	},
+	"attributes": {
+		"content": {
+			"type": "string"
+		}
+	},
+	"parent": [ "payak-blocks/accordion-item" ],
+	"usesContext": [ "payak-blocks/headingLevel" ],
+	"textdomain": "payak-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}

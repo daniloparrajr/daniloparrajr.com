@@ -1,0 +1,19 @@
+.eb-flex {
+	display: flex;
+}
+
+.eb-flex-col {
+	flex-direction: column;
+}
+
+.eb-grow {
+	flex-grow: 1;
+}
+
+.eb-items-end {
+	align-items: flex-end;
+}
+
+.eb-justify-end {
+	justify-content: flex-end;
+}

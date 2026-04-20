@@ -1,0 +1,23 @@
+@use "../abstracts" as a;
+
+@include a.media('<tablet') {
+	.is-layout-flex.eb-align-left-on-mobile {
+		justify-content: initial !important;
+	}
+}
+
+@include a.media('<tablet') {
+	p.eb-align-left-on-mobile {
+		text-align: left !important;
+	}
+}
+
+@include a.media('<desktop') {
+	p.eb-align-left-on-tablet {
+		text-align: left !important;
+	}
+}
+
+.eb-self-center {
+	align-self: center;
+}

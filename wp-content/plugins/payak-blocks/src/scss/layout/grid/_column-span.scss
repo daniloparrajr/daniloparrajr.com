@@ -1,0 +1,35 @@
+.eb-col-span {
+	grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 36rem) {
+	@for $i from 1 through 14 {
+		.eb-col-span-sm-#{$i} {
+			grid-column: auto / span $i;
+		}
+	}
+}
+
+@media screen and (min-width: 48.813rem) {
+	@for $i from 1 through 14 {
+		.eb-col-span-md-#{$i} {
+			grid-column: auto / span $i;
+		}
+	}
+}
+
+@media screen and (min-width: 62rem) {
+	@for $i from 1 through 14 {
+		.eb-col-span-lg-#{$i} {
+			grid-column: auto / span $i;
+		}
+	}
+}
+
+@media screen and (min-width: 75rem) {
+	@for $i from 1 through 14 {
+		.eb-col-span-xl-#{$i} {
+			grid-column: auto / span $i;
+		}
+	}
+}

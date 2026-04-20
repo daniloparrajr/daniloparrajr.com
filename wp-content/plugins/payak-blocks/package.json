@@ -1,0 +1,27 @@
+{
+	"name": "experi-blocks",
+	"version": "0.1.1",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --blocks-manifest --experimental-modules",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start --webpack-copy-php --blocks-manifest --experimental-modules"
+	},
+	"devDependencies": {
+		"@wordpress/dependency-extraction-webpack-plugin": "^6.31.0",
+		"@wordpress/scripts": "^30.23.0",
+		"baseline-browser-mapping": "^2.9.19",
+		"webpack-remove-empty-scripts": "^1.1.1"
+	},
+	"dependencies": {
+		"@wordpress/icons": "^10.31.0",
+		"@wordpress/interactivity": "^6.31.0",
+		"clsx": "^2.1.1",
+		"mapbox-gl": "^3.18.1"
+	}
+}

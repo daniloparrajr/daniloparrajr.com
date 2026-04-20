@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "payak-blocks/accordion-item",
+  "version": "1.0.1",
+  "title": "Accordion Item",
+  "category": "payak-blocks",
+  "attributes": {
+    "openByDefault": {
+      "type": "boolean",
+      "default": false
+    },
+    "mapZoom": {
+      "type": "integer",
+      "default": 8
+    },
+    "mapCenter": {
+      "type": "object",
+      "default": {
+        "lng": 0,
+        "lat": 0
+      }
+    },
+    "mapMarkers": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "interactivity": true,
+    "html": false,
+    "typography": {
+      "fontSize": true
+    },
+    "color": {
+      "gradients": false,
+      "text": true,
+      "background": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": false,
+      "__experimentalDefaultControls": {
+        "margin": false,
+        "padding": false
+      }
+    }
+  },
+  "parent": [
+    "payak-blocks/accordion"
+  ],
+  "allowedBlocks": [
+    "payak-blocks/accordion-header",
+    "payak-blocks/accordion-panel"
+  ],
+  "textdomain": "payak-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

@@ -1,0 +1,7 @@
+@use "../../scss/abstracts" as a;
+
+.payak-accordion .payak-accordion-item {
+	padding: var(--wp--preset--spacing--fluid-100) 0;
+	border-bottom: 1px solid var(--wp--preset--color--black-200);
+	interpolate-size: allow-keywords;
+}

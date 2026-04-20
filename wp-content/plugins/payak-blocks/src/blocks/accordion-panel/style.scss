@@ -1,0 +1,21 @@
+@use "../../scss/abstracts" as a;
+
+.payak-accordion-panel {
+	transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+	transition-delay: 0.1s;
+	overflow: hidden;
+	height: 0;
+	padding-top: 0;
+
+	&[inert] {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@supports (height: calc-size(auto, size)) {
+	.collapsed .payak-accordion-panel {
+		height: calc-size(auto, size);
+		padding-top: var(--wp--preset--spacing--fluid-100);
+	}
+}

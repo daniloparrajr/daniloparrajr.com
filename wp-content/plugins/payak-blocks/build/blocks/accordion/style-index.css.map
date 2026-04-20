@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/accordion/style-index.css","mappings":";;;AAEA;EACC;AADD,C","sources":["webpack://experi-blocks/./src/blocks/accordion/style.scss"],"sourcesContent":["@use \"../../scss/abstracts\" as a;\n\n.payak-accordion {\n\tinterpolate-size: allow-keywords;\n}\n"],"names":[],"sourceRoot":""}

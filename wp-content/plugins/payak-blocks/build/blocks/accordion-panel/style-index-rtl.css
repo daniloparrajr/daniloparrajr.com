@@ -1,0 +1,1 @@
+.payak-accordion-panel{height:0;overflow:hidden;padding-top:0;transition:height .3s ease-in-out,padding .3s ease-in-out;transition-delay:.1s}.payak-accordion-panel[inert]{height:0;opacity:0}@supports(height:calc-size(auto,size)){.collapsed .payak-accordion-panel{height:calc-size(auto,size);padding-top:var(--wp--preset--spacing--fluid-100)}}
